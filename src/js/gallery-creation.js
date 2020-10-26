@@ -1,6 +1,6 @@
 
-import menu from "./menu.json";
-import menuCardTemplates from '../src/templates/menu-list';
+import menu from "../templates/menu.json";
+import menuCardTemplates from '../templates/menu-list.hbs';
 
 
 /* console.log(menuCardTemplates(menu)); */
