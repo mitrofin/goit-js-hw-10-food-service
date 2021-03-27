@@ -6,6 +6,6 @@ const containerMenu = document.querySelector(".js-menu");
 const createMenuGallery = (menu) =>  menuCardTemplate(menu)
 ;
 
-console.log(createMenuGallery(menuList));
+/* console.log(createMenuGallery(menuList)); */
 
 containerMenu.insertAdjacentHTML("beforeend", createMenuGallery(menuList));
