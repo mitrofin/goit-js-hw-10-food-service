@@ -1,14 +1,16 @@
-const bodyEl = document.querySelector('body');
-const changeEl = document.getElementById('theme-switch-toggle');
-const savedTheme = localStorage.getItem('Theme');
-changeEl.addEventListener('change', onChangeClick);
-
-
 const Theme = {
   LIGHT: 'light-theme',
   DARK: 'dark-theme',
 };
+
+const bodyEl = document.body;
+const changeEl = document.getElementById('theme-switch-toggle');
+const savedTheme = localStorage.getItem('Theme', `${Theme.LIGHT}`);
+changeEl.addEventListener('change', onChangeClick);
+
+
 bodyEl.classList.add(savedTheme);
+
 if (savedTheme === `${Theme.DARK}`) {
   changeEl.checked = true
 }
