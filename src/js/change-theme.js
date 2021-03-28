@@ -9,7 +9,9 @@ const Theme = {
   DARK: 'dark-theme',
 };
 bodyEl.classList.add(savedTheme);
-
+if (savedTheme === `${Theme.DARK}`) {
+  changeEl.checked = true
+}
 
 function onChangeClick(e) {
   if (e.target.checked) {
